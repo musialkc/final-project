@@ -1,0 +1,50 @@
+html, body {
+    padding: 0;
+    margin: 0;
+  }
+  
+  #wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    padding: 0;
+  }
+  
+  #left-dev-env-nav {
+    position: fixed;
+    float: left;
+    left: 0;
+    width: 15%;
+    height: 100%;
+    background-color: gray;
+    overflow: auto;
+  }
+  
+  #git-bash-instruction-content {
+    float: right;
+    left: 15%;
+    width: 85%;
+    height: 100%;
+    background-color: whitesmoke;
+    overflow: auto;
+  }  
+
+  .header a {
+    float: left;
+    margin-top: 0;
+  }
+  
+  .header h3 {
+    float: right;
+    margin-top: 5px;
+  }
+
+  p.bottom {
+      border-bottom-style: solid;
+      border-bottom-color: gray;
+  }
+
+  #center {
+      text-align: center;
+  }
