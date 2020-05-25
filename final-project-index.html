@@ -28,14 +28,14 @@
         <p>By the end of this lesson you will be able to: </p>
         <ul>
             <li>Understand the differences between WindowsOS Git Bash and MacOS Git Bash</li>
-            <li>Install and/or configure the Git Bash application on a windowsOS platform</li>
+            <li>Install the Git Bash application on a windowsOS platform</li>
             <li>Use basic web development commands with the Git Bash application</li>
         </ul>
 
         <br>
         <h3>Intro to the Git Bash Terminal</h3>
         <p>The Bash Shell Environment is the preferred Command Line Interpreter/Interface (CLI) for Web Developers.  Bash is the default CLI on Linux and MacOS.  The default CLI on WindowsOS however is the windows command shell.  Bash is available on WindowsOS through free and open source applications.  The Git version of Bash (Git Bash) is preferred by Galvanize Learn for WindowsOS users in this course.</p>
-        <p>On this page, we'll provide some information to get you started with Git Bash and identify some of the differences between WindowsOS Git Bash and MacOS Git Bash.  Later instruction in this course will dive into the details on how to use Git Bash to execute programs, create and manage files and folders, interface with text and code editors and connect with Git Hub for code storage, sharing and version control.</p>
+        <p>On this page, we'll provide some information to get you started with Git Bash.  Later instruction in this course will dive into the details on how to use Git Bash to execute programs, create and manage files and folders, interface with text and code editors and connect with Git Hub for code storage, sharing and version control.</p>
         <p>Git Bash is included with the installation of Git for Windows.  The Git for Windows download and installation instructions are available <a href=https://git-scm.com/downloads>here</a>.</p>
         <br>
         <h3>Discover the Terminal</h3>
@@ -44,9 +44,9 @@
         <p>In the default settings, Git Bash provides a few elements of information about your shell environment:</p>
         <table>
             <tr>
-                <td>Text</td>
-                <td>Location</td>
-                <td>Description</td>
+                <th>Text</th>
+                <th>Location</th>
+                <th>Description</th>
             </tr>
             <tr>
                 <td>MINGW64:/C/Users/Kenneth C. Musial</td>
@@ -66,7 +66,7 @@
             <tr>
                 <td>~</td>
                 <td>Above the command line</td>
-                <td>This location above the command line identifies the current directory.  The "~" is a "Tilde" symbol.  In Git Bash, the "~" identifies the home directory location.</td>
+                <td>This location above the command line identifies the current directory.  The "~" symbol is known as the "Tilde" symbol.  In Git Bash, the "~" symbol represents the home directory location.</td>
             </tr>
             <tr>
                 <td>$</td>
@@ -76,14 +76,65 @@
            
         </table>
         <br>
-        <h3>Basic Commands and/or Keyboard Shortcuts</h3>
-        <p>yada yada yada test </p>
+        <h3>Basic Git Bash Commands</h3>
+        <p>The following are common commands you'll need for this course:</p>
+        
+        <table>
+            <tr>
+                <th>Text</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>uname</td>
+                <td>Displays operating system's Unix name.</td>
+            </tr>
+            <tr>
+                <td>git init &ltdirectory&gt</td>
+                <td>Create empty Git repo in specified directory. Run with no arguments to initialize the current directory as a git repository.</td>
+            </tr>
+            <tr>
+                <td>git add &ltdirectory&gt</td>
+                <td>Stage all changes in &ltdirectory> for the next commit.  Replace &ltdirectory> with a &ltfile> to change a specific file.</td>
+            </tr>
+            <tr>
+                <td>git add -A</td>
+                <td>Add all file changes to the Git index.  Files are not committed; they are staged and prepared for a later commit.</td>
+            </tr>
+            <tr>
+                <td>git commit -m "&ltmessage>"</td>
+                <td>Commit the staged snapshot, but instead of launching a text editor, use &ltmessage> as the commit message.</td>
+            </tr>
+            <tr>
+                <td>git status</td>
+                <td>List which files are staged, unstaged, and untracked.</td>
+            </tr>
+            <tr>
+                <td>git log</td>
+                <td>Display the entire commit history using the default format.  For customization see additional options.</td>
+            </tr>
+            <tr>
+                <td>git push origin master</td>
+                <td>Push folder and file changes from local git folder to GitHub.</td>
+            </tr>
+        </table>
         <br>
+        <h3>Challenge Questions</h3>
+            <div id="quiz"></div>
+            
+            <button id="submit">Submit Answers</button>
+            <br>
+            <div id="results"></div>
+            <div id="feedback"></div>
+        
+        
+        <div>
+            
         <br>
-        <h3>Challenge</h3>
-        <p>yada yada yada </p>
-        <br>
-        <br>
+        <script src="final-project-js.js"></script>
+        </div>
+        
+        
+        
         <br>
         <p style="text-align: left;">
             <a> &lt; </a> <a href="https://learn-2.galvanize.com/cohorts/1969/blocks/21/content_files/Development%20Environment/02-terminal.md"> Terminal (macOS)</a>

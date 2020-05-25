@@ -48,3 +48,38 @@ html, body {
   #center {
       text-align: center;
   }
+
+  .answers label{
+      display: block;
+  }
+
+  table {
+    margin-left: 0%;
+    width: 90%;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+th {
+    background-color: gray;
+    text-align: center;
+}
+td {
+    height:22px;
+}
+tr:nth-child(odd) {
+    background-color: #c1c1c180;
+}
+
+td,
+th{
+    text-align: center;
+}
+
+td + td,
+th + th{
+    text-align: left;
+}
