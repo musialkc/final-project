@@ -1,3 +1,4 @@
+//Create array of questions with answers and correct answers
 var myQuestions = [
     {
         question: "Which one of these answers is the Tilde symbol?",
@@ -51,7 +52,7 @@ generateQuiz(myQuestions, quizContainer, resultsContainer, feedbackContainer, su
 function generateQuiz(questions, quizContainer, resultsContainer, feedbackContainer, submitButton){
 
     function showQuestions(questions, quizContainer){
-        // we'll need a place to store the output and the answer choices
+        // create variables to store the output and answer choices
         var output = [];
         var answers;
 
@@ -81,14 +82,14 @@ function generateQuiz(questions, quizContainer, resultsContainer, feedbackContai
             );
         }
 
-        // finally combine our output list into one string of html and put it on the page
+        // combine output list into one string of html and put it on the page
         quizContainer.innerHTML = output.join('');
     }
 
 
     function showResults(questions, quizContainer, resultsContainer, feedbackContainer){
         
-        // gather answer containers from our quiz
+        // gather answer containers from quiz
         var answerContainers = quizContainer.querySelectorAll('.answers');
         
         // keep track of user's answers
