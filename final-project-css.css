@@ -1,8 +1,12 @@
 html, body {
     padding: 0;
-    margin: 0;
+    margin: 0;    
   }
   
+a:link {
+  text-decoration: none;
+}
+
   #wrapper {
     position: relative;
     width: 100%;

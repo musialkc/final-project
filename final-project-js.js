@@ -127,7 +127,7 @@ function generateQuiz(questions, quizContainer, resultsContainer, feedbackContai
             feedbackContainer.innerHTML = 'Good Job!'
         }
         else{
-            feedbackContainer.innerHTML = 'Try Again!'
+            feedbackContainer.innerHTML = 'Try Again!  Update your answers and click Submit!'
         }
     }
 
